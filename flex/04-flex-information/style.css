@@ -1,16 +1,19 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  text-align: center;   
 }
 
 img {
   width: 100px;
   height: 100px;
+ /* display: block;
+  margin: auto;  */
 }
 
 .title {
   font-size: 36px;
   font-weight: 900;
-  text-align: center;
+ /* text-align: center;  I added*/
   margin-bottom: 32px;
 }
 
@@ -26,3 +29,25 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+
+.plant-info-container {
+   display: flex;
+   justify-content: center;
+   gap: 56px; 
+}
+
+.plant-info {
+  max-width: 200px;
+ 
+  /* I added 
+  width: 200px;
+  flex: auto;  */
+} 
+
+/* CSS I added */
+
+/*
+.text {
+  text-align center;
+}  */
