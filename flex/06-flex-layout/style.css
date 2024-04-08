@@ -4,7 +4,7 @@ body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, sans-serif;  
 }
 
 img {
@@ -15,8 +15,9 @@ button {
   font-family: Roboto, sans-serif;
   border: none;
   border-radius: 8px;
-  background: #eee;
+  background: #eee;  
 }
+
 
 input {
   border: 1px solid #ddd;
@@ -25,3 +26,144 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+
+/* My solution worked but there was repetitive code */
+
+
+/*
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+
+.left-links, .right-links {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.header   {
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .left-links {
+  display: flex;
+  gap: 18px;
+}
+
+.header .right-links {
+  display: flex;
+  gap: 18px;
+}
+
+
+.footer {
+  background-color: #eeeeee;
+  padding: 8px;   
+  display: flex;     
+  justify-content: space-between;
+}
+
+
+.footer .left-links {
+  display: flex;
+  gap: 18px;
+}
+
+.footer .right-links {
+  display: flex;
+  gap: 18px;
+}
+
+*/
+
+
+/* re-written solution */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+button {
+  padding: 8px 16px;
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between; 
+  padding: 16px;
+}
+
+.left-links,
+.right-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 16px;  
+}
+
+.footer {
+  background: #eee ;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+/*
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.footer {
+  background: #eee;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin:  0;
+  display: flex;
+  gap: 16px;
+}
+
